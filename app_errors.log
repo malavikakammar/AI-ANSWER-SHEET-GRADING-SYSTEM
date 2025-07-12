@@ -1,0 +1,858 @@
+2024-12-22 18:38:30,870 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.22:8000
+2024-12-22 18:38:30,870 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-22 18:38:30,879 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 18:38:34,563 - WARNING -  * Debugger is active!
+2024-12-22 18:38:34,567 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 18:38:48,355 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.22:8000
+2024-12-22 18:38:48,355 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-22 18:38:48,364 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 18:38:50,348 - WARNING -  * Debugger is active!
+2024-12-22 18:38:50,353 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 18:39:16,868 - INFO - 127.0.0.1 - - [22/Dec/2024 18:39:16] "GET / HTTP/1.1" 200 -
+2024-12-22 18:39:39,668 - ERROR - Error: If using all scalar values, you must pass an index
+Traceback (most recent call last):
+  File "c:\Users\sprav\Downloads\new grade\new grade\my_flask_app\app.py", line 178, in process
+    save_results_to_csv(scores, 'results.csv')
+  File "c:\Users\sprav\Downloads\new grade\new grade\my_flask_app\app.py", line 61, in save_results_to_csv
+    df = pd.DataFrame(results)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\pandas\core\frame.py", line 778, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\pandas\core\internals\construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\pandas\core\internals\construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\pandas\core\internals\construction.py", line 667, in _extract_index
+    raise ValueError("If using all scalar values, you must pass an index")
+ValueError: If using all scalar values, you must pass an index
+2024-12-22 18:39:39,714 - INFO -  * Detected change in 'D:\\Softwares\\Python 3.11\\Lib\\site-packages\\pandas\\core\\frame.py', reloading
+2024-12-22 18:39:39,726 - INFO - 127.0.0.1 - - [22/Dec/2024 18:39:39] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2024-12-22 18:39:39,727 - INFO -  * Detected change in 'D:\\Softwares\\Python 3.11\\Lib\\site-packages\\pandas\\core\\internals\\construction.py', reloading
+2024-12-22 18:39:40,038 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 18:39:41,955 - WARNING -  * Debugger is active!
+2024-12-22 18:39:41,960 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:43:39,819 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\_typing\\_array_like.py', reloading
+2024-12-22 20:43:39,824 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\_typing\\_nested_sequence.py', reloading
+2024-12-22 20:43:39,832 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\__init__.py', reloading
+2024-12-22 20:43:39,839 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_base.py', reloading
+2024-12-22 20:43:39,861 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_csr.py', reloading
+2024-12-22 20:43:39,870 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_csc.py', reloading
+2024-12-22 20:43:39,874 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_lil.py', reloading
+2024-12-22 20:43:40,196 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:43:42,138 - WARNING -  * Debugger is active!
+2024-12-22 20:43:42,142 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:45:17,754 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:17,755 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:17,755 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:18,452 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:45:20,788 - WARNING -  * Debugger is active!
+2024-12-22 20:45:20,791 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:45:23,768 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:23,769 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:23,770 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:24,134 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:45:27,093 - WARNING -  * Debugger is active!
+2024-12-22 20:45:27,097 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:45:31,623 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:31,624 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:31,624 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:45:32,459 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:45:34,066 - WARNING -  * Debugger is active!
+2024-12-22 20:45:34,070 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:47:05,963 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.22:8000
+2024-12-22 20:47:05,963 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-22 20:47:05,970 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:47:07,810 - WARNING -  * Debugger is active!
+2024-12-22 20:47:07,814 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:48:00,289 - INFO - 127.0.0.1 - - [22/Dec/2024 20:48:00] "GET / HTTP/1.1" 200 -
+2024-12-22 20:49:28,883 - INFO -  * Detected change in 'D:\\Softwares\\Python 3.11\\Lib\\site-packages\\flask\\__init__.py', reloading
+2024-12-22 20:49:28,888 - INFO -  * Detected change in 'D:\\Softwares\\Python 3.11\\Lib\\site-packages\\flask\\app.py', reloading
+2024-12-22 20:49:28,913 - INFO - 127.0.0.1 - - [22/Dec/2024 20:49:28] "GET / HTTP/1.1" 200 -
+2024-12-22 20:49:28,929 - INFO -  * Detected change in 'D:\\Softwares\\Python 3.11\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2024-12-22 20:49:29,260 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:49:31,204 - WARNING -  * Debugger is active!
+2024-12-22 20:49:31,208 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:49:51,572 - ERROR - Error: results.html
+Traceback (most recent call last):
+  File "c:\Users\sprav\Downloads\new grade\new grade\my_flask_app\app.py", line 217, in process
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: results.html
+2024-12-22 20:49:51,588 - INFO - 127.0.0.1 - - [22/Dec/2024 20:49:51] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2024-12-22 20:49:51,589 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\jinja2\\loaders.py', reloading
+2024-12-22 20:49:51,928 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:49:53,455 - WARNING -  * Debugger is active!
+2024-12-22 20:49:53,458 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:50:34,961 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:50:34,962 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:50:34,962 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:50:35,800 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:50:37,336 - WARNING -  * Debugger is active!
+2024-12-22 20:50:37,340 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:50:45,773 - INFO - 127.0.0.1 - - [22/Dec/2024 20:50:45] "GET / HTTP/1.1" 200 -
+2024-12-22 20:51:06,339 - ERROR - Error: results.html
+Traceback (most recent call last):
+  File "c:\Users\sprav\Downloads\new grade\new grade\my_flask_app\app.py", line 217, in process
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sprav\AppData\Roaming\Python\Python311\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\Python 3.11\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: results.html
+2024-12-22 20:51:06,343 - INFO - 127.0.0.1 - - [22/Dec/2024 20:51:06] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2024-12-22 20:51:06,465 - INFO - 127.0.0.1 - - [22/Dec/2024 20:51:06] "GET /process?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-22 20:51:06,489 - INFO - 127.0.0.1 - - [22/Dec/2024 20:51:06] "GET /process?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-22 20:51:06,522 - INFO - 127.0.0.1 - - [22/Dec/2024 20:51:06] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-22 20:51:06,578 - INFO - 127.0.0.1 - - [22/Dec/2024 20:51:06] "[36mGET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 20:53:21,707 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:53:21,708 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:53:21,708 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:53:22,930 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:53:25,219 - WARNING -  * Debugger is active!
+2024-12-22 20:53:25,222 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:53:25,996 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:53:25,996 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:53:25,996 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:53:26,519 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:53:28,145 - WARNING -  * Debugger is active!
+2024-12-22 20:53:28,149 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:53:49,741 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.22:8000
+2024-12-22 20:53:49,742 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-22 20:53:49,750 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:53:51,401 - WARNING -  * Debugger is active!
+2024-12-22 20:53:51,406 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:53:55,002 - INFO - 127.0.0.1 - - [22/Dec/2024 20:53:55] "GET / HTTP/1.1" 200 -
+2024-12-22 20:54:09,251 - INFO - 127.0.0.1 - - [22/Dec/2024 20:54:09] "POST /process HTTP/1.1" 200 -
+2024-12-22 20:57:04,304 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:57:04,305 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:57:04,305 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 20:57:05,118 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 20:57:06,671 - WARNING -  * Debugger is active!
+2024-12-22 20:57:06,674 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 20:57:12,493 - INFO - 127.0.0.1 - - [22/Dec/2024 20:57:12] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:01:51,004 - INFO - 127.0.0.1 - - [22/Dec/2024 21:01:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-22 21:07:35,235 - INFO - 127.0.0.1 - - [22/Dec/2024 21:07:35] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:07:36,907 - INFO - 127.0.0.1 - - [22/Dec/2024 21:07:36] "GET / HTTP/1.1" 200 -
+2024-12-22 21:07:44,955 - INFO - 127.0.0.1 - - [22/Dec/2024 21:07:44] "[31m[1mGET /process HTTP/1.1[0m" 405 -
+2024-12-22 21:08:43,766 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:08:43,874 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:43] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-22 21:08:43,875 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:43] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-22 21:08:43,906 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-22 21:08:43,972 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:43] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:08:55,240 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:08:55,289 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-22 21:08:55,291 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-22 21:08:55,307 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:08:55,361 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:08:57,812 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:08:57,867 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-22 21:08:57,868 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-22 21:08:57,882 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:08:57,933 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:08:58,181 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:08:58,221 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:58] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-22 21:08:58,223 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-22 21:08:58,239 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:58] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:08:58,290 - INFO - 127.0.0.1 - - [22/Dec/2024 21:08:58] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:09,484 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.22:8000
+2024-12-22 21:09:09,484 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-22 21:09:09,494 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 21:09:11,151 - WARNING -  * Debugger is active!
+2024-12-22 21:09:11,154 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 21:09:11,345 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:09:11,438 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:11] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-22 21:09:11,447 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:11] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-22 21:09:11,461 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:11,518 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:12,796 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:09:12,849 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:12] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-22 21:09:12,850 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:12] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-22 21:09:12,863 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:12,916 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:13,797 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-22 21:09:13,845 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-22 21:09:13,846 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-22 21:09:13,861 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:13,921 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-22 21:09:20,651 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:20] "GET / HTTP/1.1" 200 -
+2024-12-22 21:09:49,446 - INFO - 127.0.0.1 - - [22/Dec/2024 21:09:49] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:12:27,912 - INFO - 127.0.0.1 - - [22/Dec/2024 21:12:27] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:12:31,145 - INFO - 127.0.0.1 - - [22/Dec/2024 21:12:31] "GET / HTTP/1.1" 200 -
+2024-12-22 21:15:04,296 - INFO - 127.0.0.1 - - [22/Dec/2024 21:15:04] "GET / HTTP/1.1" 200 -
+2024-12-22 21:19:58,729 - INFO - 127.0.0.1 - - [22/Dec/2024 21:19:58] "GET / HTTP/1.1" 200 -
+2024-12-22 21:22:05,078 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 21:22:05,079 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 21:22:05,079 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 21:22:05,079 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 21:22:05,689 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 21:22:07,529 - WARNING -  * Debugger is active!
+2024-12-22 21:22:07,534 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 21:27:20,666 - INFO - 127.0.0.1 - - [22/Dec/2024 21:27:20] "GET / HTTP/1.1" 200 -
+2024-12-22 21:27:34,826 - INFO - 127.0.0.1 - - [22/Dec/2024 21:27:34] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:27:40,211 - INFO - 127.0.0.1 - - [22/Dec/2024 21:27:40] "GET / HTTP/1.1" 200 -
+2024-12-22 21:29:05,892 - INFO - 127.0.0.1 - - [22/Dec/2024 21:29:05] "GET / HTTP/1.1" 200 -
+2024-12-22 21:29:20,552 - INFO - 127.0.0.1 - - [22/Dec/2024 21:29:20] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:29:36,621 - INFO - 127.0.0.1 - - [22/Dec/2024 21:29:36] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:29:47,293 - INFO - 127.0.0.1 - - [22/Dec/2024 21:29:47] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:29:52,311 - INFO - 127.0.0.1 - - [22/Dec/2024 21:29:52] "GET / HTTP/1.1" 200 -
+2024-12-22 21:48:38,773 - INFO - 127.0.0.1 - - [22/Dec/2024 21:48:38] "GET / HTTP/1.1" 200 -
+2024-12-22 21:48:51,615 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.22:8000
+2024-12-22 21:48:51,615 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-22 21:48:51,624 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 21:48:53,382 - WARNING -  * Debugger is active!
+2024-12-22 21:48:53,386 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 21:48:53,428 - INFO - 127.0.0.1 - - [22/Dec/2024 21:48:53] "GET / HTTP/1.1" 200 -
+2024-12-22 21:49:09,755 - INFO - 127.0.0.1 - - [22/Dec/2024 21:49:09] "POST /process HTTP/1.1" 200 -
+2024-12-22 21:49:42,828 - INFO - 127.0.0.1 - - [22/Dec/2024 21:49:42] "GET / HTTP/1.1" 200 -
+2024-12-22 22:03:20,796 - INFO - 127.0.0.1 - - [22/Dec/2024 22:03:20] "POST /process HTTP/1.1" 200 -
+2024-12-22 22:04:01,859 - INFO - 127.0.0.1 - - [22/Dec/2024 22:04:01] "GET / HTTP/1.1" 200 -
+2024-12-22 22:05:03,475 - INFO - 127.0.0.1 - - [22/Dec/2024 22:05:03] "POST /process HTTP/1.1" 200 -
+2024-12-22 22:06:10,982 - INFO - 127.0.0.1 - - [22/Dec/2024 22:06:10] "GET / HTTP/1.1" 200 -
+2024-12-22 22:06:27,039 - INFO - 127.0.0.1 - - [22/Dec/2024 22:06:27] "POST /process HTTP/1.1" 200 -
+2024-12-22 22:10:14,857 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\__init__.py', reloading
+2024-12-22 22:10:14,864 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_base.py', reloading
+2024-12-22 22:10:14,885 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_csr.py', reloading
+2024-12-22 22:10:14,892 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_csc.py', reloading
+2024-12-22 22:10:14,895 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_lil.py', reloading
+2024-12-22 22:10:14,901 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_dok.py', reloading
+2024-12-22 22:10:14,911 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_coo.py', reloading
+2024-12-22 22:10:14,923 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_dia.py', reloading
+2024-12-22 22:10:14,930 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_bsr.py', reloading
+2024-12-22 22:10:14,939 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_construct.py', reloading
+2024-12-22 22:10:14,953 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_extract.py', reloading
+2024-12-22 22:10:14,955 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\scipy\\sparse\\_matrix_io.py', reloading
+2024-12-22 22:10:15,979 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 22:10:17,901 - WARNING -  * Debugger is active!
+2024-12-22 22:10:17,904 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 22:10:17,974 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\typing\\__init__.py', reloading
+2024-12-22 22:10:17,978 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\_typing\\__init__.py', reloading
+2024-12-22 22:10:17,982 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\_typing\\_array_like.py', reloading
+2024-12-22 22:10:17,985 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\_typing\\_nested_sequence.py', reloading
+2024-12-22 22:10:17,988 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\core\\overrides.py', reloading
+2024-12-22 22:10:17,998 - INFO -  * Detected change in 'C:\\Users\\sprav\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy\\_typing\\_generic_alias.py', reloading
+2024-12-22 22:10:19,250 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 22:10:21,115 - WARNING -  * Debugger is active!
+2024-12-22 22:10:21,120 - INFO -  * Debugger PIN: 129-442-490
+2024-12-22 22:10:28,335 - INFO -  * Detected change in 'D:\\Softwares\\Python 3.11\\Lib\\re\\__init__.py', reloading
+2024-12-22 22:10:29,243 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 22:10:29,243 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 22:10:29,243 - INFO -  * Detected change in 'c:\\Users\\sprav\\Downloads\\new grade\\new grade\\my_flask_app\\app.py', reloading
+2024-12-22 22:10:29,664 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-22 22:10:31,497 - WARNING -  * Debugger is active!
+2024-12-22 22:10:31,501 - INFO -  * Debugger PIN: 129-442-490
+2025-01-21 01:26:31,135 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 01:26:31,135 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 01:26:31,150 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 01:26:32,543 - WARNING -  * Debugger is active!
+2025-01-21 01:26:32,546 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 01:27:22,473 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 01:27:22,473 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 01:27:22,483 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 01:27:23,861 - WARNING -  * Debugger is active!
+2025-01-21 01:27:23,863 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 01:30:18,460 - INFO - 192.168.0.118 - - [21/Jan/2025 01:30:18] "GET / HTTP/1.1" 200 -
+2025-01-21 01:30:18,561 - INFO - 192.168.0.118 - - [21/Jan/2025 01:30:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-21 01:33:12,558 - INFO - 192.168.0.118 - - [21/Jan/2025 01:33:12] "POST /process HTTP/1.1" 200 -
+2025-01-21 01:33:24,019 - INFO - 192.168.0.118 - - [21/Jan/2025 01:33:24] "GET / HTTP/1.1" 200 -
+2025-01-21 01:33:42,489 - INFO - 192.168.0.118 - - [21/Jan/2025 01:33:42] "POST /process HTTP/1.1" 200 -
+2025-01-21 01:37:15,646 - INFO - 192.168.0.118 - - [21/Jan/2025 01:37:15] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:13:38,244 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 12:13:38,244 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 12:13:38,263 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:13:39,683 - WARNING -  * Debugger is active!
+2025-01-21 12:13:39,683 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:13:51,709 - INFO - 127.0.0.1 - - [21/Jan/2025 12:13:51] "GET / HTTP/1.1" 200 -
+2025-01-21 12:13:51,798 - INFO - 127.0.0.1 - - [21/Jan/2025 12:13:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-21 12:14:07,896 - INFO - 127.0.0.1 - - [21/Jan/2025 12:14:07] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:14:11,739 - INFO - 127.0.0.1 - - [21/Jan/2025 12:14:11] "GET / HTTP/1.1" 200 -
+2025-01-21 12:14:32,562 - INFO - 127.0.0.1 - - [21/Jan/2025 12:14:32] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:15:21,044 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:15:21,044 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:15:21,044 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:15:21,809 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:15:23,405 - WARNING -  * Debugger is active!
+2025-01-21 12:15:23,408 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:21:11,712 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\core.py', reloading
+2025-01-21 12:21:11,727 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pip\\_vendor\\packaging\\markers.py', reloading
+2025-01-21 12:21:12,417 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:21:14,284 - WARNING -  * Debugger is active!
+2025-01-21 12:21:14,284 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\__init__.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\__init__.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\abstracts.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\__init__.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\__init__.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\__init__.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\abstracts.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\abstracts.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\authentication.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\authentication.py', reloading
+2025-01-21 12:21:15,984 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\charsets.py', reloading
+2025-01-21 12:21:15,990 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\charsets.py', reloading
+2025-01-21 12:21:15,990 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\connection.py', reloading
+2025-01-21 12:21:15,990 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\connection.py', reloading
+2025-01-21 12:21:15,991 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\connection_cext.py', reloading
+2025-01-21 12:21:15,991 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\connection_cext.py', reloading
+2025-01-21 12:21:15,993 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\constants.py', reloading
+2025-01-21 12:21:15,993 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\constants.py', reloading
+2025-01-21 12:21:15,993 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\conversion.py', reloading
+2025-01-21 12:21:15,994 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\conversion.py', reloading
+2025-01-21 12:21:15,994 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\cursor.py', reloading
+2025-01-21 12:21:15,994 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\cursor.py', reloading
+2025-01-21 12:21:15,995 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\cursor_cext.py', reloading
+2025-01-21 12:21:15,995 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\cursor_cext.py', reloading
+2025-01-21 12:21:15,995 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\custom_types.py', reloading
+2025-01-21 12:21:15,996 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\custom_types.py', reloading
+2025-01-21 12:21:15,996 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\dbapi.py', reloading
+2025-01-21 12:21:15,996 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\dbapi.py', reloading
+2025-01-21 12:21:15,997 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\errorcode.py', reloading
+2025-01-21 12:21:15,997 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\errorcode.py', reloading
+2025-01-21 12:21:15,997 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\errors.py', reloading
+2025-01-21 12:21:15,997 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\errors.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\logger.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\logger.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\network.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\network.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\optionfiles.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\optionfiles.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\pooling.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\pooling.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\protocol.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\protocol.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\tls_ciphers.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\tls_ciphers.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\types.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\types.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\utils.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\utils.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\version.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\version.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\abstracts.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\authentication.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\__init__.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\__init__.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\__init__.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\abstracts.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\abstracts.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\authentication.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\authentication.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\charsets.py', reloading
+2025-01-21 12:21:15,998 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\charsets.py', reloading
+2025-01-21 12:21:16,007 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\connection.py', reloading
+2025-01-21 12:21:16,007 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\connection.py', reloading
+2025-01-21 12:21:16,007 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\cursor.py', reloading
+2025-01-21 12:21:16,008 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\cursor.py', reloading
+2025-01-21 12:21:16,009 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\logger.py', reloading
+2025-01-21 12:21:16,009 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\logger.py', reloading
+2025-01-21 12:21:16,009 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\network.py', reloading
+2025-01-21 12:21:16,010 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\network.py', reloading
+2025-01-21 12:21:16,010 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\protocol.py', reloading
+2025-01-21 12:21:16,011 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\protocol.py', reloading
+2025-01-21 12:21:16,011 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\utils.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\utils.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_kerberos_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\__init__.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\__init__.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\__init__.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_kerberos_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_kerberos_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_ldap_sasl_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_ldap_sasl_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_oci_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_oci_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_openid_connect_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_openid_connect_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_webauthn_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\authentication_webauthn_client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\caching_sha2_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\caching_sha2_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\mysql_clear_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\mysql_clear_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\mysql_native_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\mysql_native_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\sha256_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\aio\\plugins\\sha256_password.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\base.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\compiler.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\__init__.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\__init__.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\base.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\base.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\client.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\compiler.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\compiler.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\creation.py', reloading
+2025-01-21 12:21:16,012 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\creation.py', reloading
+2025-01-21 12:21:16,024 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\features.py', reloading
+2025-01-21 12:21:16,024 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\features.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\introspection.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\introspection.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\operations.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\operations.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\schema.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\schema.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\validation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\django\\validation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\client_error.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\client_error.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\client_error.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\client_error.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\constants.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\instrumentation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\constants.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\constants.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\instrumentation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\instrumentation.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_kerberos_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_ldap_sasl_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_oci_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_openid_connect_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_webauthn_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\__init__.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_kerberos_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_kerberos_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_ldap_sasl_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_ldap_sasl_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_oci_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_oci_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_openid_connect_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_openid_connect_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_webauthn_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_webauthn_client.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\caching_sha2_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\caching_sha2_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\mysql_clear_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\mysql_clear_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\mysql_native_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\mysql_native_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\sha256_password.py', reloading
+2025-01-21 12:21:16,026 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\mysql\\connector\\plugins\\sha256_password.py', reloading
+2025-01-21 12:21:16,491 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:21:18,018 - WARNING -  * Debugger is active!
+2025-01-21 12:21:18,018 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:27:06,045 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 12:27:06,045 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 12:27:06,052 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:27:07,464 - WARNING -  * Debugger is active!
+2025-01-21 12:27:07,466 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:27:15,906 - INFO - 127.0.0.1 - - [21/Jan/2025 12:27:15] "GET / HTTP/1.1" 200 -
+2025-01-21 12:27:36,180 - ERROR - Error: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Traceback (most recent call last):
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 335, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 103, in process
+    conn = get_db_connection()
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 33, in get_db_connection
+    return mysql.connector.connect(**DB_CONFIG)
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 151, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\abstracts.py", line 1426, in connect
+    self._open_connection()
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 340, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-01-21 12:27:36,185 - INFO - 127.0.0.1 - - [21/Jan/2025 12:27:36] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:29:05,678 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:29:05,678 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:29:05,678 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:29:05,915 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:36:56,745 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 12:36:56,747 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 12:36:56,751 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:36:58,093 - WARNING -  * Debugger is active!
+2025-01-21 12:36:58,096 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:37:05,431 - INFO - 192.168.0.118 - - [21/Jan/2025 12:37:05] "GET / HTTP/1.1" 200 -
+2025-01-21 12:37:05,522 - INFO - 192.168.0.118 - - [21/Jan/2025 12:37:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-21 12:37:20,779 - ERROR - Error: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    cur = mysql.connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2025-01-21 12:37:20,781 - INFO - 192.168.0.118 - - [21/Jan/2025 12:37:20] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:43:20,859 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\re.py', reloading
+2025-01-21 12:43:21,344 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:43:22,811 - WARNING -  * Debugger is active!
+2025-01-21 12:43:22,812 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:43:26,745 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\concurrent\\__init__.py', reloading
+2025-01-21 12:43:26,746 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\idlelib\\__init__.py', reloading
+2025-01-21 12:43:26,746 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\lib2to3\\__init__.py', reloading
+2025-01-21 12:43:26,747 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\msilib\\__init__.py', reloading
+2025-01-21 12:43:26,747 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\test\\__init__.py', reloading
+2025-01-21 12:43:26,747 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\turtledemo\\__init__.py', reloading
+2025-01-21 12:43:26,747 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\wsgiref\\__init__.py', reloading
+2025-01-21 12:43:26,747 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\xml\\__init__.py', reloading
+2025-01-21 12:43:26,795 - INFO -  * Detected change in 'C:\\Users\\malav\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\xmlrpc\\__init__.py', reloading
+2025-01-21 12:43:27,070 - INFO -  * Restarting with watchdog (windowsapi)
+2025-01-21 12:43:28,620 - WARNING -  * Debugger is active!
+2025-01-21 12:43:28,622 - INFO -  * Debugger PIN: 934-692-470
+2025-01-21 12:46:45,203 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 12:46:45,203 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 12:46:45,209 - INFO -  * Restarting with stat
+2025-01-21 12:46:46,561 - WARNING -  * Debugger is active!
+2025-01-21 12:46:46,561 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 12:47:01,606 - INFO - 127.0.0.1 - - [21/Jan/2025 12:47:01] "GET / HTTP/1.1" 200 -
+2025-01-21 12:47:13,979 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    cur = mysql.connection.cursor()
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:47:13,981 - INFO - 127.0.0.1 - - [21/Jan/2025 12:47:13] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:48:33,434 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:48:33,611 - INFO -  * Restarting with stat
+2025-01-21 12:48:35,001 - WARNING -  * Debugger is active!
+2025-01-21 12:48:35,008 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 12:48:49,531 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    if mysql.connection:
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:48:49,542 - INFO - 127.0.0.1 - - [21/Jan/2025 12:48:49] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:49:02,921 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    if mysql.connection:
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:49:02,921 - INFO - 127.0.0.1 - - [21/Jan/2025 12:49:02] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:49:12,211 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 12:49:12,211 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 12:49:12,211 - INFO -  * Restarting with stat
+2025-01-21 12:49:13,521 - WARNING -  * Debugger is active!
+2025-01-21 12:49:13,521 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 12:49:24,223 - INFO - 127.0.0.1 - - [21/Jan/2025 12:49:24] "GET / HTTP/1.1" 200 -
+2025-01-21 12:49:40,234 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    if mysql.connection:
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:49:40,236 - INFO - 127.0.0.1 - - [21/Jan/2025 12:49:40] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:53:23,416 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    if mysql.connection:
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:53:23,440 - INFO - 127.0.0.1 - - [21/Jan/2025 12:53:23] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:53:39,791 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    if mysql.connection:
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:53:39,792 - INFO - 127.0.0.1 - - [21/Jan/2025 12:53:39] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:53:51,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 12:53:51,705 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 12:53:51,705 - INFO -  * Restarting with stat
+2025-01-21 12:53:52,998 - WARNING -  * Debugger is active!
+2025-01-21 12:53:52,998 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 12:54:01,427 - INFO - 127.0.0.1 - - [21/Jan/2025 12:54:01] "GET / HTTP/1.1" 200 -
+2025-01-21 12:54:13,689 - ERROR - Error: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 99, in process
+    if mysql.connection:
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 109, in connection
+    ctx.mysql_db = self.connect
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\flask_mysqldb\__init__.py", line 97, in connect
+    return MySQLdb.connect(**kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2025-01-21 12:54:13,692 - INFO - 127.0.0.1 - - [21/Jan/2025 12:54:13] "POST /process HTTP/1.1" 200 -
+2025-01-21 12:58:02,881 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 12:58:03,234 - INFO -  * Restarting with stat
+2025-01-21 12:58:04,630 - WARNING -  * Debugger is active!
+2025-01-21 12:58:04,633 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:15:15,871 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:15:15,871 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:15:15,871 - INFO -  * Restarting with stat
+2025-01-21 13:15:17,080 - WARNING -  * Debugger is active!
+2025-01-21 13:15:17,081 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:15:49,871 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:15:49,871 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:15:49,871 - INFO -  * Restarting with stat
+2025-01-21 13:15:50,989 - WARNING -  * Debugger is active!
+2025-01-21 13:15:50,991 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:16:14,657 - INFO - 127.0.0.1 - - [21/Jan/2025 13:16:14] "GET / HTTP/1.1" 200 -
+2025-01-21 13:16:26,102 - ERROR - Error: (1146, "Table 'grading_system.student_scores' doesn't exist")
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 101, in process
+    cur.execute("""
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "c:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\.venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'grading_system.student_scores' doesn't exist")
+2025-01-21 13:16:26,106 - INFO - 127.0.0.1 - - [21/Jan/2025 13:16:26] "POST /process HTTP/1.1" 200 -
+2025-01-21 13:20:55,739 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:20:55,739 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:20:55,739 - INFO -  * Restarting with stat
+2025-01-21 13:20:56,995 - WARNING -  * Debugger is active!
+2025-01-21 13:20:56,995 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:21:12,083 - INFO - 127.0.0.1 - - [21/Jan/2025 13:21:12] "GET / HTTP/1.1" 200 -
+2025-01-21 13:21:24,771 - INFO - 127.0.0.1 - - [21/Jan/2025 13:21:24] "POST /process HTTP/1.1" 200 -
+2025-01-21 13:24:32,870 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:24:33,034 - INFO -  * Restarting with stat
+2025-01-21 13:24:34,374 - WARNING -  * Debugger is active!
+2025-01-21 13:24:34,376 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:24:40,015 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:24:40,192 - INFO -  * Restarting with stat
+2025-01-21 13:24:41,531 - WARNING -  * Debugger is active!
+2025-01-21 13:24:41,534 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:24:52,020 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:24:52,282 - INFO -  * Restarting with stat
+2025-01-21 13:24:53,505 - WARNING -  * Debugger is active!
+2025-01-21 13:24:53,509 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:25:10,027 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:25:10,193 - INFO -  * Restarting with stat
+2025-01-21 13:25:11,507 - WARNING -  * Debugger is active!
+2025-01-21 13:25:11,507 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:27:23,416 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:27:23,416 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:27:23,418 - INFO -  * Restarting with stat
+2025-01-21 13:27:24,722 - WARNING -  * Debugger is active!
+2025-01-21 13:27:24,732 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:27:31,585 - INFO - 127.0.0.1 - - [21/Jan/2025 13:27:31] "GET / HTTP/1.1" 200 -
+2025-01-21 13:27:44,103 - INFO - 127.0.0.1 - - [21/Jan/2025 13:27:44] "POST /process HTTP/1.1" 200 -
+2025-01-21 13:27:47,446 - ERROR - Error while updating database: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "C:\Users\malav\OneDrive\Desktop\New folder (2)\new grade\my_flask_app\app.py", line 135, in update
+    scores = json.loads(request.form['scores'])  # get scores as a JSON string from the form
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\malav\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-01-21 13:27:47,450 - INFO - 127.0.0.1 - - [21/Jan/2025 13:27:47] "POST /update HTTP/1.1" 200 -
+2025-01-21 13:29:29,128 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:29:29,293 - INFO -  * Restarting with stat
+2025-01-21 13:29:30,584 - WARNING -  * Debugger is active!
+2025-01-21 13:29:30,588 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:29:37,254 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:29:37,407 - INFO -  * Restarting with stat
+2025-01-21 13:29:38,708 - WARNING -  * Debugger is active!
+2025-01-21 13:29:38,711 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:31:02,016 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:31:02,199 - INFO -  * Restarting with stat
+2025-01-21 13:32:43,352 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:32:43,352 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:32:43,352 - INFO -  * Restarting with stat
+2025-01-21 13:32:44,565 - WARNING -  * Debugger is active!
+2025-01-21 13:32:44,565 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:32:51,142 - INFO - 127.0.0.1 - - [21/Jan/2025 13:32:51] "GET / HTTP/1.1" 200 -
+2025-01-21 13:33:03,320 - INFO - 127.0.0.1 - - [21/Jan/2025 13:33:03] "POST /process HTTP/1.1" 200 -
+2025-01-21 13:33:06,281 - ERROR - Error during database update: (3140, 'Invalid JSON text: "Missing a name for object member." at position 1 in value for column \'student_scores.scores\'.')
+2025-01-21 13:33:06,322 - INFO - 127.0.0.1 - - [21/Jan/2025 13:33:06] "[35m[1mPOST /update HTTP/1.1[0m" 500 -
+2025-01-21 13:33:06,492 - INFO - 127.0.0.1 - - [21/Jan/2025 13:33:06] "GET /update?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-21 13:33:06,497 - INFO - 127.0.0.1 - - [21/Jan/2025 13:33:06] "GET /update?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-21 13:33:06,524 - INFO - 127.0.0.1 - - [21/Jan/2025 13:33:06] "GET /update?__debugger__=yes&cmd=resource&f=console.png&s=Tp4GtpOmfx5ue7YOHZYv HTTP/1.1" 200 -
+2025-01-21 13:33:06,539 - INFO - 127.0.0.1 - - [21/Jan/2025 13:33:06] "GET /update?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-21 13:34:48,405 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:34:48,570 - INFO -  * Restarting with stat
+2025-01-21 13:34:49,716 - WARNING -  * Debugger is active!
+2025-01-21 13:34:49,720 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:34:53,350 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:34:53,351 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:34:53,351 - INFO -  * Restarting with stat
+2025-01-21 13:34:54,668 - WARNING -  * Debugger is active!
+2025-01-21 13:34:54,671 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:34:58,877 - INFO - 127.0.0.1 - - [21/Jan/2025 13:34:58] "GET / HTTP/1.1" 200 -
+2025-01-21 13:35:14,509 - INFO - 127.0.0.1 - - [21/Jan/2025 13:35:14] "POST /process HTTP/1.1" 200 -
+2025-01-21 13:35:16,498 - ERROR - Error during database update: (3140, 'Invalid JSON text: "Missing a name for object member." at position 1 in value for column \'student_scores.scores\'.')
+2025-01-21 13:35:16,542 - INFO - 127.0.0.1 - - [21/Jan/2025 13:35:16] "[35m[1mPOST /update HTTP/1.1[0m" 500 -
+2025-01-21 13:35:16,702 - INFO - 127.0.0.1 - - [21/Jan/2025 13:35:16] "[36mGET /update?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-21 13:35:16,712 - INFO - 127.0.0.1 - - [21/Jan/2025 13:35:16] "[36mGET /update?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-21 13:35:16,734 - INFO - 127.0.0.1 - - [21/Jan/2025 13:35:16] "GET /update?__debugger__=yes&cmd=resource&f=console.png&s=3JOvlAsjrv895dSb3Uet HTTP/1.1" 200 -
+2025-01-21 13:36:06,147 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:36:06,312 - INFO -  * Restarting with stat
+2025-01-21 13:36:07,594 - WARNING -  * Debugger is active!
+2025-01-21 13:36:07,596 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:36:08,812 - INFO -  * Detected change in 'C:\\Users\\malav\\OneDrive\\Desktop\\New folder (2)\\new grade\\my_flask_app\\app.py', reloading
+2025-01-21 13:36:08,982 - INFO -  * Restarting with stat
+2025-01-21 13:36:10,249 - WARNING -  * Debugger is active!
+2025-01-21 13:36:10,251 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:36:18,392 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.118:8000
+2025-01-21 13:36:18,392 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 13:36:18,392 - INFO -  * Restarting with stat
+2025-01-21 13:36:19,731 - WARNING -  * Debugger is active!
+2025-01-21 13:36:19,731 - INFO -  * Debugger PIN: 128-808-419
+2025-01-21 13:36:23,186 - INFO - 127.0.0.1 - - [21/Jan/2025 13:36:23] "GET / HTTP/1.1" 200 -
+2025-01-21 13:36:35,288 - INFO - 127.0.0.1 - - [21/Jan/2025 13:36:35] "POST /process HTTP/1.1" 200 -
+2025-01-21 13:36:36,868 - ERROR - Error during database update: (3140, 'Invalid JSON text: "Missing a name for object member." at position 1 in value for column \'student_scores.scores\'.')
+2025-01-21 13:36:36,869 - INFO - 127.0.0.1 - - [21/Jan/2025 13:36:36] "POST /update HTTP/1.1" 200 -
