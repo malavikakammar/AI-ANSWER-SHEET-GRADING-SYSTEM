@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Evaluation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        form {
+            background: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="file"],
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .primary-button {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        .primary-button:hover {
+            background-color: #357abd;
+            transform: translateY(-1px);
+        }
+
+        .secondary-button {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .secondary-button:hover {
+            background-color: #5a6268;
+            transform: translateY(-1px);
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .results {
+            background: #fff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .results h2 {
+            color: #4a90e2;
+            margin-bottom: 16px;
+        }
+
+        .results table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        .results th,
+        .results td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .results th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Answer Evaluation System</h1>
+
+    {% if not results_ready %}
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="student_image_files">Upload Student Answer Sheets (Images):</label>
+            <input type="file" name="student_image_files" id="student_image_files" multiple required>
+        </div>
+
+        <div class="form-group">
+            <label for="model_file">Upload Model Answers (Text File):</label>
+            <input type="file" name="model_file" id="model_file" accept=".txt" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject_name">Subject Name:</label>
+            <input type="text" name="subject_name" id="subject_name" placeholder="Enter subject name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="roll_no">Roll Number:</label>
+            <input type="number" name="roll_no" id="roll_no" placeholder="Enter roll number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="student_name">Student Name:</label>
+            <input type="text" name="student_name" id="student_name" placeholder="Enter student name" required>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="primary-button">Evaluate Answers</button>
+        </div>
+    </form>
+    {% endif %}
+
+    {% if results_ready %}
+    <div class="results">
+        <h2>Evaluation Results</h2>
+        <p><strong>Student Name:</strong> {{ student_name }}</p>
+        <p><strong>Roll Number:</strong> {{ roll_no }}</p>
+        <p><strong>Subject:</strong> {{ subject_name }}</p>
+        <p><strong>Total Score:</strong> {{ total_score }}</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question, score in scores.items() %}
+                <tr>
+                    <td>{{ question }}</td>
+                    <td>{{ score }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="button-container">
+            <a href="/" style="flex: 1;">
+                <button type="button" class="primary-button" style="width: 100%;">Evaluate More</button>
+            </a>
+            <button type="button" class="secondary-button" disabled>Update Database</button>
+        </div>
+    </div>
+    {% endif %}
+
+    <footer>
+        <p>&copy; 2024 Answer Evaluation System</p>
+    </footer>
+</body>
+</html>
